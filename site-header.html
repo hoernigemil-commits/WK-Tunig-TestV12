@@ -1,0 +1,62 @@
+<header class="site-header">
+  <a class="wordmark" href="#start" aria-label="Werktuning Startseite">
+    <img class="brand-image" src="assets/werktuning-logo.jpg" alt="Werktuning aus Waldheim" />
+  </a>
+
+  <div class="header-row">
+    <button
+      class="header-icon menu-toggle"
+      id="menu-toggle"
+      type="button"
+      aria-label="Menü öffnen"
+      aria-expanded="false"
+      aria-controls="site-menu"
+    >
+      <span class="hamburger" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="desktop-label">Menü</span>
+    </button>
+
+    <form class="search" id="search-form" role="search">
+      <label class="sr-only" for="site-search">Suchbegriff eingeben</label>
+      <input id="site-search" type="search" placeholder="Suchbegriff eingeben ..." />
+      <button type="submit" aria-label="Suchen">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="10.8" cy="10.8" r="6.8"></circle>
+          <path d="m16 16 5 5"></path>
+        </svg>
+      </button>
+    </form>
+
+    <nav class="quick-links" aria-label="Schnellzugriff">
+      <button class="header-icon future-control" type="button" aria-label="Merkliste folgt" disabled>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.8 8.8c0 4.4-8.8 11-8.8 11s-8.8-6.6-8.8-11a4.8 4.8 0 0 1 8.8-2.6 4.8 4.8 0 0 1 8.8 2.6Z"></path>
+        </svg>
+      </button>
+      <button class="header-icon future-control" type="button" aria-label="Konto folgt" disabled>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="7.5" r="4"></circle>
+          <path d="M4.5 21v-2a7.5 7.5 0 0 1 15 0v2"></path>
+        </svg>
+      </button>
+      <button
+        class="cart-button"
+        id="cart-button"
+        type="button"
+        aria-label="Warenkorb, 0 Euro"
+        aria-expanded="false"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 7h12l1 14H5L6 7Z"></path>
+          <path d="M9 8V5a3 3 0 0 1 6 0v3"></path>
+        </svg>
+        <span class="cart-total">0,00 €</span>
+      </button>
+    </nav>
+  </div>
+
+  <nav class="main-menu" id="site-menu" aria-label="Hauptnavigation">
+    <a href="#projekte">Projekte</a>
+    <a href="#ratgeber">Ratgeber</a>
+  </nav>
+</header>
